@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-intro">
+            <p class="eyebrow">Tumi and Princess's Gallery</p>
+            <h1>Beautiful moments</h1>
+            <p class="subtitle">A collection of cherished memories.</p>
+        </div>
+    </header>
+
+    <section class="password-screen" id="passwordScreen">
+        <div class="password-panel">
+            <h2>Enter password to continue</h2>
+            <p>Type the gallery password to unlock the photos.</p>
+            <form id="passwordForm">
+                <label for="passwordInput">Password</label>
+                <input id="passwordInput" type="password" autocomplete="current-password" required>
+                <button type="submit">Unlock gallery</button>
+                <p class="error-message" id="passwordError" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <main class="gallery" id="galleryContent" aria-hidden="true">
+        <div class="folder-menu" role="tablist" aria-label="Gallery folders">
+            <button class="folder-card active" type="button" data-folder="night-market" role="tab" aria-selected="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="3" />
+                    <circle cx="8" cy="9" r="1.5" />
+                    <path d="M21 18l-6-6-4 4-3-3L3 18" />
+                </svg>
+                <span>Night Market</span>
+            </button>
+            <button class="folder-card" type="button" data-folder="spider-man" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="3" />
+                    <circle cx="8" cy="9" r="1.5" />
+                    <path d="M21 18l-6-6-4 4-3-3L3 18" />
+                </svg>
+                <span>Spider Man</span>
+            </button>
+            <button class="folder-card" type="button" data-folder="randoms" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="3" />
+                    <circle cx="8" cy="9" r="1.5" />
+                    <path d="M21 18l-6-6-4 4-3-3L3 18" />
+                </svg>
+                <span>Randoms</span>
+            </button>
+        </div>
+
+        <section class="gallery-folder active" data-folder="night-market">
+            <h2 class="folder-title">Night Market</h2>
+            <div class="folder-grid">
+                <figure class="gallery-item">
+                    <img src="Images/Night1.jpeg" alt="Night Market photo 1">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Night2.jpeg" alt="Night Market photo 2">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Night3.jpeg" alt="Night Market photo 3">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Night4.jpeg" alt="Night Market photo 4">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Night5.jpeg" alt="Night Market photo 5">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Night7.jpeg" alt="Night Market photo 7">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="" alt="Night Market photo 6">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Night8.jpeg" alt="Night Market photo 8">
+                </figure>
+            </div>
+        </section>
+
+        <section class="gallery-folder" data-folder="spider-man">
+            <h2 class="folder-title">Spider Man</h2>
+            <div class="folder-grid">
+                <figure class="gallery-item">
+                    <img src="Images/Spider6.jpeg" alt="Spider Man photo 6">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Spider1.jpeg" alt="Spider Man photo 1">
+                </figure>
+                <figure class="gallery-item horizontal">
+                    <img src="Images/Spider3.jpeg" alt="Spider Man photo 3">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Spider4.jpeg" alt="Spider Man photo 4">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Spider2.jpeg" alt="Spider Man photo 2">
+                </figure>
+                <figure class="gallery-item horizontal">
+                    <img src="Images/Spider5.jpeg" alt="Spider Man photo 5">
+                </figure>
+                
+            </div>
+        </section>
+
+        <section class="gallery-folder" data-folder="randoms">
+            <h2 class="folder-title">Randoms</h2>
+            <div class="folder-grid">
+                <figure class="gallery-item">
+                    <img src="Images/Random1.jpeg" alt="Random photo 1">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Random2.jpeg" alt="Random photo 2">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Random3.jpeg" alt="Random photo 3">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Random4.jpeg" alt="Random photo 4">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Images/Random5.jpeg" alt="Random photo 5">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <script src="Web.JS"></script>
+</body>
+</html>
