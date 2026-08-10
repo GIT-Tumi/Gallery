@@ -185,19 +185,35 @@ h1 {
         white-space: normal;
     }
 
+    .gallery {
+        justify-items: center;
+    }
+
+    .gallery-folder.active {
+        width: 100%;
+        justify-items: center;
+    }
+
     .gallery-item {
         border-radius: 1rem;
         aspect-ratio: 3 / 4;
         min-height: clamp(200px, 44vw, 270px);
+        width: min(100%, 180px);
+        margin: 0 auto;
     }
 
     .gallery-item.horizontal {
         grid-column: span 2;
         aspect-ratio: 16 / 10;
+        width: 100%;
+        max-width: 100%;
     }
 
     .folder-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        width: min(100%, 380px);
+        margin: 0 auto;
     }
 
     .folder-title {
